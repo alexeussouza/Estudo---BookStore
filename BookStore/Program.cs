@@ -1,4 +1,5 @@
 using BookStore.Context;
+using BookStore.Filters;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -6,7 +7,13 @@ using Microsoft.Extensions.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options => 
+{
+    //adicionando um filtro global na aplicação, filtro da pasta Filters
+    options.Filters.Add<LogActionFilter>();
+
+});
+
 
 builder.Services.AddDbContext<BookStoreDataContext>(options => 
 options.UseSqlServer(builder.Configuration.GetConnectionString("BookStoreConnectionString")));
