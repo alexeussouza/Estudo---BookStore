@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "BookStore/1.0.0": {
         "dependencies": {
+          "BookStore.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
@@ -434,6 +435,11 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "BookStore.Domain/1.0.0": {
+        "runtime": {
+          "BookStore.Domain.dll": {}
+        }
       }
     }
   },
@@ -743,6 +749,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "BookStore.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
