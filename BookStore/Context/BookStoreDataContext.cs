@@ -1,4 +1,5 @@
-﻿using BookStore.Mapping;
+﻿using BookStore.Domain;
+using BookStore.Mapping;
 using Microsoft.EntityFrameworkCore;
 using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 
