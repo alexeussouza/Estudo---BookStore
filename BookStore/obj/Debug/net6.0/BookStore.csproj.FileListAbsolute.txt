@@ -59,3 +59,5 @@ C:\Users\Alexandre\Documents\GitHub\Estudo---BookStore\BookStore\obj\Debug\net6.
 C:\Users\Alexandre\Documents\GitHub\Estudo---BookStore\BookStore\obj\Debug\net6.0\BookStore.pdb
 C:\Users\Alexandre\Documents\GitHub\Estudo---BookStore\BookStore\obj\Debug\net6.0\BookStore.genruntimeconfig.cache
 C:\Users\Alexandre\Documents\GitHub\Estudo---BookStore\BookStore\obj\Debug\net6.0\ref\BookStore.dll
+C:\Users\Alexandre\Documents\GitHub\Estudo---BookStore\BookStore\bin\Debug\net6.0\BookStore.Domain.dll
+C:\Users\Alexandre\Documents\GitHub\Estudo---BookStore\BookStore\bin\Debug\net6.0\BookStore.Domain.pdb

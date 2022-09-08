@@ -1,5 +1,5 @@
 ﻿
-namespace BookStore
+namespace BookStore.Domain
 {
     public class Livro
     {
