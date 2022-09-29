@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\BookStore.csproj": {}
+    "C:\\Users\\alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\BookStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\BookStore.csproj": {
+    "C:\\Users\\alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\BookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\BookStore.csproj",
+        "projectUniqueName": "C:\\Users\\alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\BookStore.csproj",
         "projectName": "BookStore",
-        "projectPath": "C:\\Users\\Alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\BookStore.csproj",
-        "packagesPath": "C:\\Users\\Alexandre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\obj\\",
+        "projectPath": "C:\\Users\\alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\BookStore.csproj",
+        "packagesPath": "C:\\Users\\alexandre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexandre\\Documents\\GitHub\\Estudo---BookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alexandre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexandre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
