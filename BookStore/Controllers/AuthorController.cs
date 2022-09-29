@@ -17,7 +17,7 @@ namespace BookStore.Controllers
         [Route("listar")]
         public ActionResult Index()
         {
-            var autores = repository.Get();
+           var autores = repository.Get();
             
             return View(autores);
         }
@@ -70,6 +70,20 @@ namespace BookStore.Controllers
         {
             repository.Delete(id);
             return RedirectToAction("Index");
+        }
+
+        [Route("rota/{categoria:minlength(3)}")] // necessário digitar rota/abc  (rota/3  caracteres)
+        public string flamengo(string texto)
+        {
+
+            return "OK! Cheguei na rota!";
+        }
+
+        [Route("rota4/{time:(flamengo)}")] // necessário digitar rota/abc  (rota/3  caracteres)
+        public string MeuTime(string time)
+        {
+
+            return "OK! Seu time é " + time;
         }
     }
 }

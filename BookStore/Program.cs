@@ -1,8 +1,8 @@
 using BookStore.Context;
 using BookStore.Filters;
-using Microsoft.AspNetCore.Routing;
+using BookStore.RouteConstraints;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +13,10 @@ builder.Services.AddControllersWithViews(options =>
     options.Filters.Add<LogActionFilter>();
 
 });
+
+// Add Restrições de rota para a aplicação
+builder.Services.AddRouting(options =>
+    options.ConstraintMap.Add("values", typeof(ValuesConstraint)));
 
 
 builder.Services.AddDbContext<BookStoreDataContext>(options => 
@@ -41,3 +45,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
