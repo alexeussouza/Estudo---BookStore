@@ -15,7 +15,11 @@ namespace BookStore.Repositories
         {
             _db = db;   
         }
-        
+
+        public AuthorRepository()
+        {
+        }
+
         //Metodo Criar
         public bool Create(Autor autor)
         {
@@ -30,7 +34,6 @@ namespace BookStore.Repositories
 
                 return false;
             }
-           
         }
 
         //Metodo Deletar
@@ -50,13 +53,15 @@ namespace BookStore.Repositories
         //Metodo Listar por Id
         public Autor Get(int id)
         {
-            throw new NotImplementedException();
+            return _db.Autores.Find(id);
         }
 
         //Metodo Listar por Nome
-        public Autor Get(string name)
+        public List <Autor> GetByName(string name) 
         {
-            throw new NotImplementedException();
+            return _db.Autores
+                .Where(x => x.Nome.Contains(name))
+                .ToList(); // retorna uma lista usando SQL Like em Nomes com a variavel name
         }
 
         //Metodo Atualizar
@@ -69,7 +74,7 @@ namespace BookStore.Repositories
                 _db.SaveChanges();
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
                 return false;
